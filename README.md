@@ -4,7 +4,7 @@
 
 <h1 align="center">Bespoke WordPress Themes</h1>
 
-<h3 align="center">Custom WordPress engineering — pixel-perfect UI, 95+ PageSpeed, production-grade integrations</h3>
+<h3 align="center">Custom WordPress engineering pixel-perfect UI</h3>
 
 <p align="center">
   <strong>Muhammad Hamid</strong><br>
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/muhammad-hamid-dev/">LinkedIn</a>&nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/muhammad-hamid-jamil/">LinkedIn</a>&nbsp;·&nbsp;
   <a href="https://github.com/muhammad-hamid-jamil">GitHub</a>&nbsp;·&nbsp;
   <a href="https://websolsolutions.com/">Websol Solutions</a>&nbsp;·&nbsp;
   <a href="mailto:muhammadhamidjamil0@gmail.com">Email</a>

@@ -4,13 +4,13 @@ Engineering overview for the custom theme built by **Muhammad Hamid**.
 
 ## Design principles
 
-1. **Layout in code** — Every section is a PHP partial. Admin never touches HTML structure.
-2. **Content via ACF** — Text, images, and video fields with hardcoded fallbacks in templates.
-3. **One plugin** — Advanced Custom Fields handles all admin editing. No page builders.
-4. **Page-scoped assets** — Each template loads its own CSS/JS bundle only.
-5. **CRM-native forms** — HubSpot Forms API through a server-side WordPress proxy.
+1. **Layout in code**  Every section is a PHP partial. Admin never touches HTML structure.
+2. **Content via ACF**  Text, images, and video fields with hardcoded fallbacks in templates.
+3. **One plugin**  Advanced Custom Fields handles all admin editing. No page builders.
+4. **Page-scoped assets**  Each template loads its own CSS/JS bundle only.
+5. **CRM-native forms**  HubSpot Forms API through a server-side WordPress proxy.
 
-## Request flow — lead forms
+## Request flow  lead forms
 
 ```
 User submits custom HTML form

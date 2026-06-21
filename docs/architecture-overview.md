@@ -1,4 +1,4 @@
-# Architecture — DAP Logistics WordPress Theme
+# Architecture DAP Logistics WordPress Theme
 
 Engineering overview for the custom theme built by **Muhammad Hamid**.
 

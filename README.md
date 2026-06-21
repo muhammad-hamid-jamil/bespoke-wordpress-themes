@@ -30,44 +30,31 @@
 
 ## DAP Logistics — Enterprise WordPress Theme
 
-I designed and built a **fully custom WordPress theme** for a cross-border logistics & e-commerce platform operating across **Pakistan, Bangladesh, Sri Lanka, and UAE**.
+I built a **fully custom WordPress theme** for a cross-border logistics & e-commerce platform operating across **Pakistan, Bangladesh, Sri Lanka, and UAE**.
 
-Six production marketing pages. Three CRM-connected lead forms. Native SEO. Admin-friendly content editing. **No page builders. One plugin.**
-
----
-
-## What I delivered
-
-| Page | Scope |
-|------|--------|
-| **Home** | Hero, stats, services, routes map, mid-page lead form, testimonials, sticky CTA |
-| **China Sourcing** | Video USP section, warehouse/QC blocks, 7-field sourcing enquiry |
-| **Bangladesh Expansion** | Market opportunity, fulfilment flow, expansion proposal form |
-| **About** | Company story, timeline, operations, values |
-| **Privacy & Terms** | Full legal pages with dynamic contact data from site settings |
-
-**Total:** 6 pages · 3 lead forms · 400+ admin-editable fields · HubSpot CRM pipeline
+CRM-connected lead forms & Native SEO, Admin-friendly content editing. **No page builders. One plugin.**
 
 ---
+
 
 ## Performance & architecture
 
-I engineered this theme for **speed and maintainability** — not drag-and-drop convenience.
+I engineered this theme for **speed and maintainability** not drag-and-drop convenience.
 
 | Decision | Impact |
 |----------|--------|
-| **Custom theme, zero page builder** | No Elementor/Divi bloat — lean asset loading |
+| **Custom theme, zero page builder** | No Elementor/Divi bloat lean asset loading |
 | **ACF as the only content plugin** | Full admin control without 20+ plugins |
 | **Per-page CSS & JS bundles** | Only load what each template needs |
-| **Template-parts architecture** | 14 modular sections on home alone — clean separation |
+| **Template-parts architecture** | 14 modular sections on home alone clean separation |
 | **Server-side HubSpot proxy** | Custom form UI preserved; API submit with IP + tracking context |
-| **Native SEO module** | Meta, OG, Twitter Cards, Schema.org — Yoast-compatible |
+| **Native SEO module** | Meta, OG, Twitter Cards, Schema.org Yoast-compatible |
 
 **Result:** 95+ mobile PageSpeed score on production pages with live forms and animations.
 
 ---
 
-## UI showcase — Desktop
+## UI showcase Desktop
 
 <details open>
 <summary><strong>Homepage — full page</strong></summary>
@@ -95,35 +82,14 @@ I engineered this theme for **speed and maintainability** — not drag-and-drop 
 
 ---
 
-## UI showcase — Mobile responsive
-
-Full-page mobile captures at **390px** — native phone width, no crop.
-
-<p align="center"><strong>Home</strong></p>
-<p align="center">
-  <img src="docs/screenshots/home-mobile.png" alt="Home mobile full page" width="390">
-</p>
-
-<p align="center"><strong>China Sourcing</strong></p>
-<p align="center">
-  <img src="docs/screenshots/china-sourcing-mobile.png" alt="China sourcing mobile full page" width="390">
-</p>
-
-<p align="center"><strong>Bangladesh Expansion</strong></p>
-<p align="center">
-  <img src="docs/screenshots/bangladesh-mobile.png" alt="Bangladesh mobile full page" width="390">
-</p>
-
----
-
 ## Technical highlights
 
 ### Custom ACF content layer
 
-I built a safe editing pattern — layout locked in PHP partials, copy editable via ACF:
+I built a safe editing pattern layout locked in PHP partials, copy editable via ACF:
 
 ```php
-<h2><?php demo_text( 'hero_heading', 'Get your rate card in 48 hours' ); ?></h2>
+<h2><?php demo_text( 'hero_heading', 'Get..... hours' ); ?></h2>
 ```
 
 Empty field → design default shows. Updated field → new copy only. **Layout never breaks.**
@@ -178,7 +144,7 @@ dap-logistics/
 
 ## Work with me
 
-I build **bespoke WordPress themes** for companies that need real engineering — not template customization.
+I build **Bespoke WordPress Themes** for companies that need real engineering not template customization.
 
 Pixel-perfect design implementation · 90+ PageSpeed · CRM integrations · Custom admin panels · WooCommerce · Headless-ready architecture
 

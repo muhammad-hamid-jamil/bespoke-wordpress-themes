@@ -1,31 +1,51 @@
-# Architecture Overview (Showcase)
+# Architecture — DAP Logistics WordPress Theme
 
-Public summary of the bespoke theme approach used in enterprise client builds.
+Engineering overview for the custom theme built by **Muhammad Hamid**.
 
-## Principles
+## Design principles
 
-1. **Pixel-perfect** — Original HTML/CSS/JS preserved per page; WordPress wraps, never replaces, the design.
-2. **Safe editing** — ACF text/image/video fields only; no full-section WYSIWYG overrides.
-3. **Minimal plugins** — Advanced Custom Fields as the single content plugin for admin UX.
-4. **Performance-first** — Page-specific assets; no bloated page builders; 95+ mobile PageSpeed targets.
-5. **CRM-ready** — HubSpot Forms API via server-side proxy (IP + cookie context).
+1. **Layout in code** — Every section is a PHP partial. Admin never touches HTML structure.
+2. **Content via ACF** — Text, images, and video fields with hardcoded fallbacks in templates.
+3. **One plugin** — Advanced Custom Fields handles all admin editing. No page builders.
+4. **Page-scoped assets** — Each template loads its own CSS/JS bundle only.
+5. **CRM-native forms** — HubSpot Forms API through a server-side WordPress proxy.
 
-## Stack
-
-| Layer | Choice |
-|-------|--------|
-| CMS | WordPress 6.x |
-| Content | ACF (options + per-page fields) |
-| CRM | HubSpot Forms API v3 |
-| SEO | Native theme module (Yoast-compatible) |
-| Assets | One CSS + one JS bundle per template |
-
-## Typical page structure
+## Request flow — lead forms
 
 ```
-page-templates/template-{slug}.php
-  └── template-parts/{slug}/section-*.php
-        └── demo_text( 'field_key', 'Default copy from design' )
+User submits custom HTML form
+        ↓
+dap-hubspot.js (AJAX + nonce)
+        ↓
+WordPress admin-ajax.php
+        ↓
+inc/hubspot.php → dap_hubspot_api_submit()
+        ↓
+HubSpot Forms API v3 (IP + hutk cookie attached)
+        ↓
+Contact / submission recorded in HubSpot CRM
 ```
 
-Full source code, field maps, and client documentation are provided under private engagement only.
+## Content editing flow
+
+```
+template-parts/home/hero.php
+        ↓
+dap_text( 'home_hero_line1', 'Expand Your Business' )
+        ↓
+get_field() → ACF value OR default string
+        ↓
+Frontend renders updated copy — layout unchanged
+```
+
+## Module map
+
+| Module | File | Responsibility |
+|--------|------|----------------|
+| Bootstrap | `functions.php` | Assets, page map, theme setup |
+| Helpers | `inc/helpers.php` | Field getters, WhatsApp URLs, partials |
+| HubSpot | `inc/hubspot.php` | Form GUIDs, AJAX proxy, tracking |
+| SEO | `inc/seo.php` | Meta, OG, Schema.org |
+| Legal | `inc/legal.php` | Dynamic contact in legal pages |
+| ACF | `inc/acf-fields/` | Global settings + per-page fields |
+| Activation | `inc/activation.php` | Auto page creation on theme switch |

@@ -1,23 +1,17 @@
 # Screenshots
 
-Add high-resolution frontend captures here for the README gallery.
+Full-page captures used in the GitHub README.
 
-## Recommended files
+| File | Viewport |
+|------|----------|
+| `hero-desktop.png` | 1440×900 — README banner |
+| `home-desktop.png` | 1440×9200 — full home page |
+| `home-mobile.png` | 390×9800 — full home mobile |
+| `china-sourcing-desktop.png` | 1440×8600 |
+| `china-sourcing-mobile.png` | 390×9200 |
+| `bangladesh-desktop.png` | 1440×8200 |
+| `bangladesh-mobile.png` | 390×8800 |
+| `about-desktop.png` | 1440×6800 |
+| `hero-china.png` | 1440×900 — optional banner |
 
-| File | Description |
-|------|-------------|
-| `home-desktop.png` | Home page — 1920×1080 or wider |
-| `home-mobile.png` | Home page mobile — 390×844 |
-| `china-sourcing-desktop.png` | China Sourcing page |
-| `china-sourcing-mobile.png` | China Sourcing mobile |
-| `bangladesh-expansion-desktop.png` | Bangladesh Expansion page |
-| `about-desktop.png` | About page (optional) |
-
-## How to capture
-
-1. Open the live or staging site in Chrome
-2. DevTools → Toggle device toolbar for mobile shots
-3. Full-page screenshot extension or `Cmd+Shift+P` → "Capture full size screenshot"
-4. Export at **2×** for retina clarity on GitHub README
-
-Do **not** include HubSpot admin panels, WordPress admin, or client credentials in screenshots.
+Re-capture with Chrome headless and tall window height for full-page shots.
